@@ -1,6 +1,6 @@
 $(window).scroll(function(){
     if ($(document).scrollTop() > 10) {
-        $('.navbar').css({'background': 'black', 'transition': '500ms', 'box-shadow': '1px 1px 2px 1px rgba(0,0,0,0.2)'});
+        $('.navbar').css({'background': '#191970', 'transition': '500ms', 'box-shadow': '1px 1px 2px 1px rgba(0,0,0,0.2)'});
     }
     else {
         $('.navbar').css({'background': 'transparent', 'box-shadow': 'none'});

@@ -37,6 +37,7 @@ nav.navbar {
 .logo {
     font-family: 'Righteous', cursive;
     font-size: 2em;
+    cursor: pointer;
 }
 
 .circlemain {
@@ -75,6 +76,12 @@ nav.navbar {
 
 .textservice {
     text-align: center;
+    width: 40%;
+}
+
+.textservice2 {
+    text-align: center;
+    width: 50%;
 }
 
 .textservice h3 {
@@ -85,7 +92,7 @@ nav.navbar {
 }
 
 .block2 {
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .svgservice {
@@ -98,7 +105,7 @@ nav.navbar {
 
 footer {
     position: relative;
-    background-color: black;
+    background-color: #191970;
     color: white;
     height: 10em;
 }
@@ -111,12 +118,16 @@ footer {
     padding-bottom: 3%;
     background: white;
     left: 40%;
-    bottom: 0%;
+    bottom: 1%;
     top: 10%;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
     z-index: 999;
+}
+
+.resume {
+    text-align: center;
 }
 
 form input {
@@ -208,3 +219,45 @@ ul li {
     transition: 400ms;
     color: yellowgreen;
 }
+
+@media screen and (max-width: 640px) {
+    .contact {
+      width: 100%;
+      border-radius: 0;
+      left: 0;
+      top: 0;
+    }
+    form {
+        margin-top: 10%;
+    }
+    .mainsvg {
+        display: none;
+    }
+    .navnav {
+        width: 70%!important;
+    }
+    .svgservice {
+        width: 90%;
+        padding: 0;
+    }
+    .textservice {
+        margin: 0;
+        width: 90%;
+    }
+    .resume p {
+        display: none;
+    }
+    .blockservices {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+      .child h5 {
+          display: none;
+      }
+      .circlemain {
+          width: 17em;
+          height: 17em;
+      }
+  }
