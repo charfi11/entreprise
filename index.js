@@ -11,6 +11,10 @@ $('#navcontact').click(function(){
     $('#cont').toggle();
 });
 
+$('.cl').click(function(){
+    $('#cont').hide();
+});
+
 $("#serv").click(function() {
     $('html,body').animate({
         scrollTop: $(".block2").offset().top},

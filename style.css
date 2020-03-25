@@ -84,6 +84,13 @@ nav.navbar {
     width: 50%;
 }
 
+.textservice2 h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .textservice h3 {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
@@ -107,7 +114,7 @@ footer {
     position: relative;
     background-color: #191970;
     color: white;
-    height: 10em;
+    height: 12em;
 }
 
 .contact {
@@ -128,6 +135,10 @@ footer {
 
 .resume {
     text-align: center;
+}
+
+.resume h5 {
+    font-family: 'Righteous', cursive;
 }
 
 form input {
@@ -183,7 +194,14 @@ form textarea {
 }
 
 .txt {
+    width: 60%;
+    margin: auto;
     line-height: 2em;
+}
+
+.cl {
+    cursor: pointer;
+    color: black;
 }
 
 ul {
@@ -197,6 +215,11 @@ ul li {
     justify-content: space-around;
     color: white;
     cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.8;
+    transition: 200ms;
 }
 
 .mainsvg {
@@ -217,7 +240,7 @@ ul li {
 
 .myweb:hover {
     transition: 400ms;
-    color: yellowgreen;
+    color: goldenrod;
 }
 
 @media screen and (max-width: 640px) {
@@ -234,7 +257,7 @@ ul li {
         display: none;
     }
     .navnav {
-        width: 70%!important;
+        width: 65%!important;
     }
     .svgservice {
         width: 90%;
@@ -250,14 +273,16 @@ ul li {
     .blockservices {
         flex-wrap: wrap;
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
   }
 
   @media screen and (max-width: 880px) {
-      .child h5 {
-          display: none;
-      }
       .circlemain {
-          width: 17em;
-          height: 17em;
+          border-radius: 0%;
       }
   }
